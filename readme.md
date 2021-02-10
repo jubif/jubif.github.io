@@ -22,8 +22,10 @@ This is useful for when something is hidden on screen and you need to access it.
 javascript:(function(){document.getElementsByClassName("note-editable")[0].children[0].innerText="Hi this is Jordan with uBreakiFix. Your repair is complete, our final quality approval has been completed, and your device is now ready for pickup! When you come in make sure and ask your tech about our Home+ Protection Program, exclusive to our ubreakifix customers."})()
 ```
 
-This one will automatically fill in the repaired message. 
-> :warning: Be sure to change the name before adding the bookmarklet as it currently says jordan. Also, you have to press a key in the note field or portal won't recognize that anything was entered. I usually just add a space at the end.
+This one will automatically fill in the repaired message.
+
+{% include important.html content="Be sure to change the name before adding the bookmarklet as it currently says jordan. Also, you have to press a key in the note field or portal won't recognize that anything was entered. I usually just add a space at the end." %}
+
 ## How to use them
 
 If you have never used bookmarklets before, the above might seem a little scary. But they are actually very easy to use. All you have to do is add a new bookmark from the bookmark manager and paste in the code as the url. If you have any issues, you can look up a tutorial online or message me for help.
