@@ -24,7 +24,7 @@ javascript:(function(){document.getElementsByClassName("note-editable")[0].child
 
 This one will automatically fill in the repaired message.
 
-***Be sure to change the name before adding the bookmarklet as it currently says jordan. Also, you have to press a key in the note field or portal won't recognize that anything was entered. I usually just add a space at the end.***
+> ***Be sure to change the name before adding the bookmarklet as it currently says jordan. Also, you have to press a key in the note field or portal won't recognize that anything was entered. I usually just add a space at the end.***
 
 ## How to use them
 
