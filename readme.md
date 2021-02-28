@@ -12,19 +12,29 @@ The bookmarklets here are for the ubif portal, but some of them could be used on
 - Unhide everything
 
 ```javascript 
-javascript:(function(){$(function(){$("body *").each(function(){$(this).removeAttr("style"),$(this).removeClass("hidden")})})})()
+javascript:(()=>{$(function(){$("body *").each(function(){$(this).removeAttr("style"),$(this).removeClass("hidden")})})})()
 ```
 This is useful for when something is hidden on screen and you need to access it. I.E. a test is hidden behind a timer but you already know the answers
     
 - Repaired
 
 ```javascript 
-javascript:(function(){document.getElementsByClassName("note-editable")[0].children[0].innerText="Hi this is Jordan with uBreakiFix. Your repair is complete, our final quality approval has been completed, and your device is now ready for pickup! When you come in make sure and ask your tech about our Home+ Protection Program, exclusive to our ubreakifix customers."})()
+javascript:(()=>{document.getElementsByClassName("note-editable")[0].children[0].innerText="Hi this is Jordan with uBreakiFix. Your repair is complete, our final quality approval has been completed, and your device is now ready for pickup! When you come in make sure and ask your tech about our Home+ Protection Program, exclusive to our ubreakifix customers."})()
 ```
 
 This one will automatically fill in the repaired message.
 
 > ***Be sure to change the name before adding the bookmarklet as it currently says jordan. Also, you have to press a key in the note field or portal won't recognize that anything was entered. I usually just add a space at the end.***
+
+- Update Message
+
+```javascript
+javascript:(()=>{let n="Jordan",p="316-285-0055 option 4",e=$(".note-editable")[0].children[0].innerText;e=e.replace(/\[user_first_name\]/g,n).replace(/\[store_phone\]/g,p)})()
+```
+
+This is similar to the previous one but it's for when you copy-paste the sms template into the note. It changes the \[store_phone]\ and \[user_first_name\] to the appropriate things.
+
+> ***Like the last one, change "Jordan" and "option 4" to whatever is appropriate for you before making it a bookmark***
 
 ## How to use them
 
