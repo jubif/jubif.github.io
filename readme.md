@@ -29,7 +29,7 @@ This one will automatically fill in the repaired message.
 - Update Message
 
 ```javascript
-javascript:(()=>{let n="Jordan",p="316-285-0055 option 4",e=$(".note-editable")[0].children[0].innerText;e=e.replace(/\[user_first_name\]/g,n).replace(/\[store_phone\]/g,p)})()
+javascript:(()=>{let n="Jordan",p="316-285-0055 option 4",e=$(".note-editable")[0].children[0];e.innerText=e.innerText.replace(/\[user_first_name\]/g,n).replace(/\[store_phone\]/g,p)})()
 ```
 
 This is similar to the previous one but it's for when you copy-paste the sms template into the note. It changes the \[store_phone]\ and \[user_first_name\] to the appropriate things.
